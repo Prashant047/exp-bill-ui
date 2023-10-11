@@ -21,7 +21,7 @@ function OrderList() {
       <div>
         <ul className="flex flex-col gap-2 mb-5 h-[500px] ">
           <AnimatePresence mode='popLayout'>
-            {orderData?.map(({id, count, name, price}) => (
+            {orderData?.map(({id, count, name, price}: any) => (
               <OrderList.Item
                 id={id}
                 key={id}
